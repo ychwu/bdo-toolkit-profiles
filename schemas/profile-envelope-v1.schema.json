@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ychwu.github.io/bdo-toolkit-profiles/schemas/profile-envelope-v1.schema.json",
+  "title": "BDO Toolkit verified opcode profile envelope v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "manifest", "profile"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "revision",
+        "region",
+        "patch_label",
+        "verified_at",
+        "profile_schema_version",
+        "minimum_toolkit_version",
+        "profile_sha256",
+        "verification"
+      ],
+      "properties": {
+        "revision": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$"
+        },
+        "region": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "patch_label": {"type": "string", "minLength": 1, "maxLength": 128},
+        "verified_at": {"type": "string", "format": "date-time"},
+        "profile_schema_version": {"const": 1},
+        "minimum_toolkit_version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "profile_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "verification": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "profile": {"type": "object"}
+  }
+}

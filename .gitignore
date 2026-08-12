@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+dist/
+build/
+
+# Never publish packet captures, local calibration inputs, or signing keys.
+*.pcap
+*.pcapng
+opcodes.local
+opcodes.local.*
+*.jsonl
+*.log
+*.bak
+*.tmp
+.env
+.env.*
+/captures/
+/fixtures/
+/verification/
+/private/
+*.pem
+*.key
+private-keys/
+
+# Local-only maintainer and agent guidance. Keep these out of the public repo.
+/AGENTS.md
+/MAINTENANCE_PRIVATE.md
+/.agents/
+/.codex/
+/.claude/
+/CLAUDE.md
