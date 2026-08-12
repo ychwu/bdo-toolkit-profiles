@@ -1,0 +1,114 @@
+{
+  "manifest": {
+    "minimum_toolkit_version": "0.1.0",
+    "patch_label": "2026-08-11",
+    "profile_schema_version": 1,
+    "profile_sha256": "b732c674597d9d53afb3090a497320253bb7f0de4ba2b2022b2973f13e16604e",
+    "region": "na-eu",
+    "revision": "na-eu-2026-08-11-r1",
+    "verification": [
+      "character-load-hydration",
+      "item-receipts",
+      "loot-preview",
+      "manual-storage",
+      "worker-storage"
+    ],
+    "verified_at": "2026-08-12T04:54:42Z"
+  },
+  "profile": {
+    "calibration_item_id": 7003,
+    "profile_active": true,
+    "specs": {
+      "INVENTORY_TRANSFER": [
+        {
+          "confidence": "calibrated-high",
+          "context_offset": 21,
+          "event": "INVENTORY_TRANSFER",
+          "item_id_offset": 34,
+          "item_instance_offset": 69,
+          "length": 255,
+          "observed_at": "2026-08-12T04:34:49Z",
+          "opcode": "0x1424",
+          "quantity_offset": 38,
+          "repeat_stride": 230,
+          "score": 0.9,
+          "source": "calibrate storage-to-inventory item_id=15156 qty=1"
+        }
+      ],
+      "LOOT_PREVIEW": [
+        {
+          "confidence": "calibrated-high",
+          "event": "LOOT_PREVIEW",
+          "item_id_offset": 21,
+          "item_instance_offset": 56,
+          "length": 243,
+          "observed_at": "2026-08-12T04:37:19Z",
+          "opcode": "0x16DF",
+          "quantity_offset": 25,
+          "score": 1.0,
+          "source": "calibrate loot-preview item_id=7003"
+        }
+      ],
+      "SOURCE_CONTAINER_DECREMENT": [
+        {
+          "confidence": "calibrated-high",
+          "context_offset": 6,
+          "event": "SOURCE_CONTAINER_DECREMENT",
+          "length": 40,
+          "observed_at": "2026-08-12T04:34:49Z",
+          "opcode": "0x1B28",
+          "quantity_removed_offset": 32,
+          "score": 0.9,
+          "source": "calibrate storage-to-inventory item_id=15156 qty=1",
+          "source_instance_offset": 24
+        }
+      ],
+      "SOURCE_ITEM_REFERENCE": [
+        {
+          "confidence": "calibrated-medium",
+          "event": "SOURCE_ITEM_REFERENCE",
+          "item_id_offset": 28,
+          "length": 34,
+          "observed_at": "2026-08-12T04:34:46Z",
+          "opcode": "0x0CA7",
+          "score": 0.82,
+          "source": "calibrate inventory-to-storage item_id=15156 qty=1"
+        }
+      ],
+      "SOURCE_STACK_DECREMENT": [
+        {
+          "confidence": "calibrated-high",
+          "event": "SOURCE_STACK_DECREMENT",
+          "length": 47,
+          "observed_at": "2026-08-12T04:34:47Z",
+          "opcode": "0x1505",
+          "quantity_removed_offset": 26,
+          "repeat_stride": 21,
+          "score": 0.9,
+          "source": "calibrate inventory-to-storage item_id=15156 qty=1",
+          "source_instance_offset": 39
+        }
+      ],
+      "STORAGE_ITEM_DELTA": [
+        {
+          "confidence": "calibrated-high",
+          "context_offset": 8,
+          "destination_instance_offset": 79,
+          "event": "STORAGE_ITEM_DELTA",
+          "item_id_offset": 44,
+          "length": 270,
+          "observed_at": "2026-08-12T04:34:46Z",
+          "opcode": "0x1C51",
+          "quantity_added_offset": 48,
+          "record_count_offset": 5,
+          "repeat_stride": 228,
+          "score": 1.0,
+          "source": "calibrate inventory-to-storage item_id=15156 qty=1"
+        }
+      ]
+    },
+    "updated_at": "2026-08-12T04:37:22Z",
+    "version": 1
+  },
+  "schema_version": 1
+}
