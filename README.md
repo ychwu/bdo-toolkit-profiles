@@ -68,10 +68,3 @@ endpoint and this repository's GitHub access controls. A future signed-envelope
 schema can strengthen publisher authentication without changing archived
 version-1 envelopes.
 
-## GitHub Pages setup
-
-After creating the GitHub repository, open **Settings > Pages**, select
-**GitHub Actions** as the source, and push `main`. The included workflow
-validates the complete repository before deploying only the public channel and
-profile directories.
-
