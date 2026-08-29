@@ -1,4 +1,4 @@
-# BDO Toolkit Verified Profiles
+# BDO Toolkit Verified Profiles [WIP]
 
 This repository publishes maintainer-verified opcode profiles for the item
 decoder in [`bdo-toolkit`](https://github.com/ychwu/bdo-toolkit). It is kept
