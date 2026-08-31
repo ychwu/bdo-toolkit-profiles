@@ -5,6 +5,7 @@ __pycache__/
 .venv/
 dist/
 build/
+/tmp/pdfs/
 
 # Never publish packet captures, local calibration inputs, or signing keys.
 *.pcap
@@ -28,6 +29,7 @@ private-keys/
 # Local-only maintainer and agent guidance. Keep these out of the public repo.
 /AGENTS.md
 /MAINTENANCE_PRIVATE.md
+/output/pdf/MAINTENANCE_PRIVATE.pdf
 /.agents/
 /.codex/
 /.claude/
