@@ -6,6 +6,11 @@ publisher with `--confirm-verified`.
 
 ## Required profile evidence
 
+- Open the official [patch notes](https://www.naeu.playblackdesert.com/en-US/News/Notice?boardType=2)
+  for the patch being verified. Manually enter its patch date as `YYYY-MM-DD`
+  for `--patch-label`, and retain the article URL with private verification
+  evidence. Do not use the publication date or an article's last-updated date.
+  Stop if the patch date is unclear.
 - `LOOT_PREVIEW` is populated and a real supported loot source decodes.
 - `INVENTORY_TRANSFER` is populated; single and multi-record withdrawals
   decode every record.
@@ -42,4 +47,3 @@ retain their output privately. Never copy raw captures into this repository.
 - If a published profile is later disproved, remove it from the stable channel
   immediately but retain the historical file and document the superseding
   revision in the commit message.
-
