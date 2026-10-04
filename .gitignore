@@ -6,6 +6,7 @@ __pycache__/
 dist/
 build/
 /tmp/pdfs/
+/tmp/html/
 
 # Never publish packet captures, local calibration inputs, or signing keys.
 *.pcap
@@ -30,6 +31,7 @@ private-keys/
 /AGENTS.md
 /MAINTENANCE_PRIVATE.md
 /output/pdf/MAINTENANCE_PRIVATE.pdf
+/output/html/MAINTENANCE_PRIVATE.html
 /.agents/
 /.codex/
 /.claude/
