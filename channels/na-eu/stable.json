@@ -1,11 +1,11 @@
 {
   "manifest": {
     "minimum_toolkit_version": "1.0.8",
-    "patch_label": "2026-10-15",
+    "patch_label": "2026-10-16",
     "profile_schema_version": 1,
     "profile_sha256": "0d308161f5b52fec331faad78b237cf9124921aed1353f8ab226c16a518375f9",
     "region": "na-eu",
-    "revision": "na-eu-2026-10-15-r1",
+    "revision": "na-eu-2026-10-16-r1",
     "verification": [
       "character-load-hydration",
       "item-receipts",
@@ -13,7 +13,7 @@
       "manual-storage",
       "worker-storage"
     ],
-    "verified_at": "2026-10-15T20:54:23Z"
+    "verified_at": "2026-10-16T10:15:40Z"
   },
   "profile": {
     "agris": {
