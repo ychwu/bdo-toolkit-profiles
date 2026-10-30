@@ -1,11 +1,11 @@
 {
   "manifest": {
-    "minimum_toolkit_version": "1.0.12",
-    "patch_label": "2026-10-22",
+    "minimum_toolkit_version": "1.0.16",
+    "patch_label": "2026-10-29",
     "profile_schema_version": 1,
-    "profile_sha256": "bbdfc65159bd04873de5dcaac71297f9bb42a6a046a69f5ca2a97699a4496352",
+    "profile_sha256": "91f62293ade590b67bb3316c6515d4799ec5e8218717b7d61f7f3f2713e0848b",
     "region": "na-eu",
-    "revision": "na-eu-2026-10-22-r1",
+    "revision": "na-eu-2026-10-29-r1",
     "verification": [
       "character-load-hydration",
       "item-receipts",
@@ -13,17 +13,17 @@
       "manual-storage",
       "worker-storage"
     ],
-    "verified_at": "2026-10-22T18:27:03Z"
+    "verified_at": "2026-10-30T07:31:11Z"
   },
   "profile": {
     "agris": {
       "encoding": "uint32_le",
       "flag": 0,
-      "maximum_offset": 36,
+      "maximum_offset": 28,
       "message_length": 40,
-      "observed_date": "2026-10-22",
-      "opcode": "0x1830",
-      "remaining_offset": 7
+      "observed_date": "2026-10-30",
+      "opcode": "0x0CFE",
+      "remaining_offset": 5
     },
     "calibration_item_id": 7003,
     "profile_active": true,
@@ -31,15 +31,15 @@
       "INVENTORY_TRANSFER": [
         {
           "confidence": "calibrated-high",
-          "context_offset": 15,
+          "context_offset": 25,
           "event": "INVENTORY_TRANSFER",
-          "item_id_offset": 26,
-          "item_instance_offset": 61,
-          "length": 249,
-          "observed_at": "2026-10-22T18:12:02Z",
-          "opcode": "0x0F99",
-          "quantity_offset": 30,
-          "repeat_stride": 223,
+          "item_id_offset": 29,
+          "item_instance_offset": 64,
+          "length": 253,
+          "observed_at": "2026-10-30T07:16:09Z",
+          "opcode": "0x14BE",
+          "quantity_offset": 33,
+          "repeat_stride": 224,
           "score": 0.9,
           "source": "calibrate storage-to-inventory item_id=15156 qty=1"
         }
@@ -48,12 +48,12 @@
         {
           "confidence": "calibrated-medium",
           "event": "LOOT_PREVIEW",
-          "item_id_offset": 18,
-          "item_instance_offset": 53,
-          "length": 692,
-          "observed_at": "2026-10-22T18:20:12Z",
-          "opcode": "0x19B6",
-          "quantity_offset": 22,
+          "item_id_offset": 21,
+          "item_instance_offset": 56,
+          "length": 470,
+          "observed_at": "2026-10-30T07:23:10Z",
+          "opcode": "0x1435",
+          "quantity_offset": 25,
           "score": 0.9,
           "source": "calibrate loot-preview item_id=7003"
         }
@@ -63,23 +63,23 @@
           "confidence": "calibrated-high",
           "context_offset": 5,
           "event": "SOURCE_CONTAINER_DECREMENT",
-          "length": 36,
-          "observed_at": "2026-10-22T18:12:02Z",
-          "opcode": "0x1BE2",
-          "quantity_removed_offset": 9,
+          "length": 39,
+          "observed_at": "2026-10-30T07:16:09Z",
+          "opcode": "0x1813",
+          "quantity_removed_offset": 29,
           "score": 0.9,
           "source": "calibrate storage-to-inventory item_id=15156 qty=1",
-          "source_instance_offset": 26
+          "source_instance_offset": 9
         }
       ],
       "SOURCE_ITEM_REFERENCE": [
         {
           "confidence": "calibrated-medium",
           "event": "SOURCE_ITEM_REFERENCE",
-          "item_id_offset": 22,
-          "length": 26,
-          "observed_at": "2026-10-22T18:11:59Z",
-          "opcode": "0x0E96",
+          "item_id_offset": 13,
+          "length": 28,
+          "observed_at": "2026-10-30T07:16:07Z",
+          "opcode": "0x1B89",
           "score": 0.82,
           "source": "calibrate inventory-to-storage item_id=15156 qty=1"
         }
@@ -88,11 +88,11 @@
         {
           "confidence": "calibrated-high",
           "event": "SOURCE_STACK_DECREMENT",
-          "length": 48,
-          "observed_at": "2026-10-22T18:12:00Z",
-          "opcode": "0x1CC2",
-          "quantity_removed_offset": 39,
-          "repeat_stride": 22,
+          "length": 44,
+          "observed_at": "2026-10-30T07:16:08Z",
+          "opcode": "0x0DDD",
+          "quantity_removed_offset": 34,
+          "repeat_stride": 21,
           "score": 0.9,
           "source": "calibrate inventory-to-storage item_id=15156 qty=1",
           "source_instance_offset": 26
@@ -101,31 +101,31 @@
       "STORAGE_ITEM_DELTA": [
         {
           "confidence": "calibrated-high",
-          "context_offset": 20,
-          "destination_instance_offset": 77,
+          "context_offset": 29,
+          "destination_instance_offset": 73,
           "event": "STORAGE_ITEM_DELTA",
-          "item_id_offset": 42,
-          "length": 265,
-          "observed_at": "2026-10-22T18:11:59Z",
-          "opcode": "0x153F",
-          "quantity_added_offset": 46,
-          "record_count_offset": 18,
-          "repeat_stride": 227,
+          "item_id_offset": 38,
+          "length": 262,
+          "observed_at": "2026-10-30T07:16:07Z",
+          "opcode": "0x178A",
+          "quantity_added_offset": 42,
+          "record_count_offset": 19,
+          "repeat_stride": 224,
           "score": 1.0,
           "source": "calibrate inventory-to-storage item_id=15156 qty=1"
         }
       ]
     },
-    "updated_at": "2026-10-22T18:20:13Z",
+    "updated_at": "2026-10-30T07:23:15Z",
     "version": 1,
     "xp": {
-      "current_offset": 34,
+      "current_offset": 13,
       "encoding": "level-u8-xp-u64le-solo-v1",
       "flag": 0,
-      "level_offset": 43,
-      "message_length": 63,
-      "opcode": "0x0CD2",
-      "required_offset": 9
+      "level_offset": 5,
+      "message_length": 66,
+      "opcode": "0x0C04",
+      "required_offset": 42
     }
   },
   "schema_version": 1
