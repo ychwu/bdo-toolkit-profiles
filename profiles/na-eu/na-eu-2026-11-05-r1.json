@@ -1,0 +1,222 @@
+{
+  "manifest": {
+    "minimum_toolkit_version": "1.0.16",
+    "patch_label": "2026-11-05",
+    "profile_schema_version": 1,
+    "profile_sha256": "518e0f4029d31789136a4decfc38437198232412a1f4e28a915d519706e62211",
+    "region": "na-eu",
+    "revision": "na-eu-2026-11-05-r1",
+    "verification": [
+      "character-load-hydration",
+      "item-receipts",
+      "loot-preview",
+      "manual-storage",
+      "worker-storage"
+    ],
+    "verified_at": "2026-11-05T20:59:39Z"
+  },
+  "profile": {
+    "agris": {
+      "encoding": "uint32_le",
+      "flag": 0,
+      "maximum_offset": 18,
+      "message_length": 34,
+      "observed_date": "2026-11-05",
+      "opcode": "0x1380",
+      "remaining_offset": 14
+    },
+    "calibration_item_id": 7003,
+    "characters": {
+      "schema_version": 1,
+      "tables": {
+        "active": {
+          "count_offset": null,
+          "fields": {
+            "item": 0,
+            "quantity": 4
+          },
+          "fixed_count": 46,
+          "header": 11,
+          "opcode": 3620,
+          "stride": 221
+        },
+        "life": {
+          "count_offset": 7,
+          "fields": {
+            "item": 0,
+            "quantity": 4,
+            "slot": 221
+          },
+          "fixed_count": null,
+          "header": 9,
+          "opcode": 5895,
+          "stride": 222
+        },
+        "named": {
+          "count_offset": 6,
+          "fields": {
+            "name": 109,
+            "owner": 17
+          },
+          "fixed_count": null,
+          "header": 11,
+          "opcode": 4980,
+          "stride": 265
+        },
+        "portrait": {
+          "count_offset": null,
+          "fields": {
+            "name": 3271,
+            "owner": 92
+          },
+          "fixed_count": 1,
+          "header": 0,
+          "opcode": 4797,
+          "stride": 7923
+        },
+        "remote": {
+          "count_offset": 6,
+          "fields": {
+            "container": 58,
+            "item": 46,
+            "owner": 59,
+            "quantity": 16,
+            "slot": 50,
+            "stone1": 0,
+            "stone2": 4
+          },
+          "fixed_count": null,
+          "header": 8,
+          "opcode": 4955,
+          "stride": 67
+        },
+        "roster": {
+          "count_offset": 6,
+          "fields": {
+            "metadata": 0,
+            "owner": 2
+          },
+          "fixed_count": null,
+          "header": 10,
+          "opcode": 3294,
+          "stride": 12
+        },
+        "stats": {
+          "count_offset": 6,
+          "fields": {
+            "aap": 8,
+            "ap": 4,
+            "dp": 0,
+            "owner": 12
+          },
+          "fixed_count": null,
+          "header": 8,
+          "opcode": 3666,
+          "stride": 20
+        }
+      }
+    },
+    "profile_active": true,
+    "specs": {
+      "INVENTORY_TRANSFER": [
+        {
+          "confidence": "calibrated-high",
+          "context_offset": 24,
+          "event": "INVENTORY_TRANSFER",
+          "item_id_offset": 32,
+          "item_instance_offset": 67,
+          "length": 254,
+          "observed_at": "2026-11-05T20:15:56Z",
+          "opcode": "0x142A",
+          "quantity_offset": 36,
+          "repeat_stride": 223,
+          "score": 0.9,
+          "source": "calibrate storage-to-inventory item_id=15156 qty=1"
+        }
+      ],
+      "LOOT_PREVIEW": [
+        {
+          "confidence": "calibrated-high",
+          "event": "LOOT_PREVIEW",
+          "item_id_offset": 17,
+          "item_instance_offset": 52,
+          "length": 243,
+          "observed_at": "2026-11-05T20:17:09Z",
+          "opcode": "0x1943",
+          "quantity_offset": 21,
+          "score": 1.0,
+          "source": "calibrate loot-preview item_id=7003"
+        }
+      ],
+      "SOURCE_CONTAINER_DECREMENT": [
+        {
+          "confidence": "calibrated-high",
+          "context_offset": 5,
+          "event": "SOURCE_CONTAINER_DECREMENT",
+          "length": 36,
+          "observed_at": "2026-11-05T20:15:56Z",
+          "opcode": "0x0D1A",
+          "quantity_removed_offset": 9,
+          "score": 0.9,
+          "source": "calibrate storage-to-inventory item_id=15156 qty=1",
+          "source_instance_offset": 27
+        }
+      ],
+      "SOURCE_ITEM_REFERENCE": [
+        {
+          "confidence": "calibrated-medium",
+          "event": "SOURCE_ITEM_REFERENCE",
+          "item_id_offset": 15,
+          "length": 32,
+          "observed_at": "2026-11-05T20:15:54Z",
+          "opcode": "0x0CD5",
+          "score": 0.82,
+          "source": "calibrate inventory-to-storage item_id=15156 qty=1"
+        }
+      ],
+      "SOURCE_STACK_DECREMENT": [
+        {
+          "confidence": "calibrated-high",
+          "event": "SOURCE_STACK_DECREMENT",
+          "length": 46,
+          "observed_at": "2026-11-05T20:15:55Z",
+          "opcode": "0x0D6F",
+          "quantity_removed_offset": 38,
+          "repeat_stride": 23,
+          "score": 0.9,
+          "source": "calibrate inventory-to-storage item_id=15156 qty=1",
+          "source_instance_offset": 30
+        }
+      ],
+      "STORAGE_ITEM_DELTA": [
+        {
+          "confidence": "calibrated-high",
+          "context_offset": 37,
+          "destination_instance_offset": 80,
+          "event": "STORAGE_ITEM_DELTA",
+          "item_id_offset": 45,
+          "length": 268,
+          "observed_at": "2026-11-05T20:15:54Z",
+          "opcode": "0x1473",
+          "quantity_added_offset": 49,
+          "record_count_offset": 9,
+          "repeat_stride": 223,
+          "score": 1.0,
+          "source": "calibrate inventory-to-storage item_id=15156 qty=1"
+        }
+      ]
+    },
+    "updated_at": "2026-11-05T20:17:12Z",
+    "version": 1,
+    "xp": {
+      "current_offset": 13,
+      "encoding": "level-u8-xp-u64le-solo-v1",
+      "flag": 0,
+      "level_offset": 53,
+      "message_length": 70,
+      "opcode": "0x0F84",
+      "required_offset": 58
+    }
+  },
+  "schema_version": 1
+}
